@@ -1,7 +1,13 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Baloo Chettan 2', sans-serif;
 }
+
+p{
+    font-size: 17px;
+}
+
 .imgbox {
     display: grid;
     height: 100%;
@@ -11,6 +17,32 @@
     display: flex;
     justify-content: center;
 }
+
+.headingProfile{
+    font-size: 50px;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #1c81c1;
+    color: #FFFFFF;
+    font-size: 19px;
+    transition: all .2s ease-in-out;
+}
+
+.menu:hover{
+    background-color: #2d2d2d;
+    color: #1c81c1;
+    font-size: 19px;
+    transform: scale(0.96); 
+}
+
 
 .headingTitle{
     width: 100%;
@@ -34,11 +66,57 @@ hr{
 }
 
 .meimg{
-    border: 3px solid black;
-    width: 15%;
-    border-radius: 50%;
+    border: 3px solid #1c81c1;
+    border-radius: 50%; 
+    width:80%;
     padding: 5px;
 
+}
+
+.headingProfile h1{
+    color: #1c81c1;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 50px;
+    
+
+}
+
+.dropHeadingClicker{
+    width: 150px;
+     height: 70px; 
+     background-color: #1c81c1; 
+     margin-left: 20%; 
+     position: absolute;
+     bottom: 0;
+}
+
+.lockOn{
+    animation: MoveUpDown 0.95s linear infinite;
+    position: absolute;
+    left: 55px;
+    bottom: 0;
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 15px;
+    }
+  }
+  
+
+h4{
+    color: #27ddd8;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    
+}
+
+h5{
+    color: #27ddd8;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    
 }
 
 body { 
@@ -54,7 +132,8 @@ body {
 
 .content > div {
     text-align: center;
-    background-color: white;
+    background-color: #2d2d2d;
+    color: white;
     width: 100%;
 }
 

@@ -6,8 +6,8 @@
     <script
   src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital@1&family=Baloo+Chettan+2&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="css/styles.css">  
 </head>
   <body>
@@ -16,34 +16,68 @@
             <h1><b>Alexander Silvestro O'Donnell</b></h1>
             <hr>
             <b>Interactive Resume</b>
-        </div>  
+        </div> 
+        <div class="rounded-top dropHeadingClicker">
+          <a href="#content">
+          <img class='lockOn' src="img/arrow.png" alt="pointer" style="width: 25%;">
+        </a>
+        </div>
+        </div>
     </div>
 
     <div class="content">
+      <a name="content"></a>
         <div>
           <div class='content-header'>
-            <h1>Profile</h1>
-              <img class="meimg" src="img/me.jpg" alt="me">
-            <h5>Check out my website :)</h5>
+            <div class='headingProfile'>
+              <div style="text-align: center; width: 400px;" >
+                <h1>Profile</h1>
+                <h5>Check out my website :)</h5>
+                <hr>
+              </div>  
+            </div>
+            <div class='row justify-content-md-center' style="margin-top: 50px;">
+              <div class='col-md-auto' style="width: 250px; text-align: left;">
+                <h4>About Me:
+                </h4>
+                <br>
+                <p>
+                  Hi! I'm Alex, an aspiring Software Developer! I am a junior programmer with a solid 
+                  fundamental knowledge of most popular languages and methodologies. I love programming and try and spend as much time as I can learning something new about it 
+                  (when I'm not playing League).
+                </p>
+              </div>
+              <div class='col-md-auto' style="width: 350px;">
+                <img class="meimg" src="img/me.jpg" alt="me">
+              </div>
+              <div class='col-md-auto' style="width: 250px; text-align: right;">
+              <h4>Life Stats:</h4>
+              <p>
+                <br>
+                <h5>Name:</h5>
+                Alexander Silvestro O'Donnell <br>
+                <h5>Age:</h5>
+                24 <br>
+                <h5>Location:</h5>
+                Melbourne, Victoria, Australia <br>
+                <h5>Dog:</h5>
+                Ava (Gordan Setter)
+              </p>
+              </div>
+            </div>
           </div>
-
+<div style="background-color:  #153f70;">
           <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link active" href="#first">Active</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
+            <div class="btn-group">
+              <button type="button" class="btn menu">Work Exp</button>
+              <button type="button" class="btn menu">Education</button>
+              <button type="button" class="btn menu">Languages</button>
+              <button type="button" class="btn menu">Contact</button>
+          </div>
           </ul>
 
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
+            <ol class="carousel-indicators" style="margin-top: 100px;">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
@@ -57,33 +91,77 @@
                 year range            breif into about what i enjoyed and what i did
 
                -->
-            <div class='work-exp'>
-              WITCOM TELECOMMUNICATIONS – Full Stack Web Developer
-              <br>
-              Part-time, developing a reporting website for a small Telecommunications business 
-              <br>
-              Implementing dynamic graphs using JS module Chart.js for data visualisation 
-              <br>
-              Designed entire relational database necessary for SQL, with Log In system for customers,
-              <br> and a Adminstrator dashboard and Invoicing system for company owner
-              <br>
-              <br>
-               CODE CAMP - Co-Head Teacher
-              <br> Mananging classes of 5-10 Kids and Teaching kids how to code basic HTML, CSS, scratch, and other basics.
-              <br>
-              <br>
-              DELIVEROO – Live Operations Team Member
-              <br>
-              Working in a fast-paced start-up office environment having to constantly adapt and change to new processes within the office and business
-              <br>
-              Focus ensuring live orders successfully delivered to customers, liaising and coordinating with multiple parties (riders, restaurants, customers) 
-              <br>to overcome unique issues with deliveries
+            <div class='work-exp' style="padding-bottom: 100px;">
+              <div class='container'  style="width: 900px;">
+              <div class="row" style="padding: 20px;">
+                <div class="col-md" style="text-align: left;">
+                  <div >
+                    <!-- Job Title -->
+                    <h5>WITCOM TELECOMMUNICATIONS <br></h5>
+                  </div>
+                  <!-- Year -->
+                  <div>
+                    2019-2020
+                  </div>
+                </div>
+                <!--  -->
+                <div class="col-md" style="text-align: right; ">
+                  <h5>Full Stack Web Developer</h5>
+                  Part-time, developing a reporting website for a small Telecommunications business.         
+                  Designed relational database necessary for SQL, with Log In system for customers,
+                  and a Adminstrator dashboard for reporting and Invoicing system for company owner.
+                </div>
+              </div>
+            </div>
+
+            <div class='container'  style="width: 900px;">
+              <div class="row" style="padding: 20px;">
+                <div class="col-md" style="text-align: left;">
+                  <div >
+                    <!-- Job Title -->
+                    <h5>CODE CAMP<br></h5>
+                  </div>
+                  <!-- Year -->
+                  <div>
+                    2020
+                  </div>
+                </div>
+                <!-- Info -->
+                <div class="col-md" style="text-align: right; ">
+                  <h5>Co-Head Teacher</h5>
+                  Mananging classes of 5-10 Kids and Teaching kids how to code basic HTML, CSS, scratch, and other basics.
+                </div>
+              </div>
+            </div>
+
+            <div class='container'  style="width: 900px;">
+              <div class="row" style="padding: 20px;">
+                <div class="col-md" style="text-align: left;">
+                  <div >
+                    <!-- Job Title -->
+                    <h5>DELIVEROO<br></h5>
+                  </div>
+                  <!-- Year -->
+                  <div>
+                    2019
+                  </div>
+                </div>
+                <!-- Info -->
+                <div class="col-md" style="text-align: right; ">
+                  <h5>Live Operations Team Member</h5>
+                  Working in a fast-paced start-up office environment having to constantly adapt and change to new processes within the office and business
+            <br>
+            Focus ensuring live orders successfully delivered to customers, liaising and coordinating with multiple parties (riders, restaurants, customers) 
+            <br>to overcome unique issues with deliveries
+                </div>
+              </div>
+            </div>
             </div>
               </div>
               <div class="carousel-item">
                 <img class="d-block w-100" src="..." alt="Second slide">
                           
-            <div class="profile">
+            <div class="profile"  style="padding-bottom: 100px;">
               <!-- 
 
                 follow the structure of 
@@ -100,15 +178,13 @@
               <br> Completed from 2014-2017 with Distinction 
               <br>
               <br>Ivanhoe Grammar School 2008-2013
-              <br>A</br>
-              <br>A</br>
-              <br>A</br>
+
           
             </div>
               </div>
               <div class="carousel-item">
                 <img class="d-block w-100" src="..." alt="Third slide">
-                <div class='uni-projects'>
+                <div class='uni-projects'  style="padding-bottom: 100px;">
                   <!-- 
                     follows the structure of
                     name
@@ -138,14 +214,6 @@
                 see if you can add github link/embedded contribution thing
                -->
               <br>Programming Languages</br>
-              <br>A</br>
-              <br>A</br>
-              <br>A</br>
-              <br>A</br>
-              <br>A</br>
-              <br>A</br>
-              <br>A</br>
-              <br>A</br>
 
               <!-- Prepare a container for your calendar. -->
               Github Calender courtesy of <a href="https://github.com/IonicaBizau/github-calendar">IonicaBizau</a>
@@ -170,17 +238,9 @@
 
             <div class='Contact'>
               <br>Contact</br>
-              <br>A</br>
-              <br>A</br>
-              <br>A</br>
-              <br>A</br>
-              <br>A</br>
-              <br>A</br>
-              <br>A</br>
-              <br>A</br>
 
             </div>
-
+</div>
         </div>
     </div>
 
@@ -196,7 +256,9 @@
 />
 
 
-<script>
+<script></script>
+<script type="text/javascript">
+
     new GitHubCalendar(".calendar", "asodonnell");
 </script>
   </body>
