@@ -6,8 +6,10 @@
     <script
   src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.js"    integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="    crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-   <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital@1&family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital@1&family=Baloo+Chettan+2&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="css/styles.css">  
 </head>
   <body>
@@ -15,7 +17,7 @@
         <div class='headingText'>
             <h1><b>Alexander Silvestro O'Donnell</b></h1>
             <hr>
-            <b>Interactive Resume</b>
+            <b style="color: white;">Interactive Resume</b>
         </div> 
         <div class="rounded-top dropHeadingClicker">
           <a href="#content">
@@ -69,9 +71,11 @@
 <div style="background-color:  #153f70;">
           <ul class="nav justify-content-center">
             <div class="btn-group">
-              <button type="button" class="btn menu">Work Exp</button>
-              <button type="button" class="btn menu">Education</button>
-              <button type="button" class="btn menu">Languages</button>
+              <button type="button" class="btn menu" data-target="#carouselExampleIndicators" data-slide-to="0">Work Exp</button>
+              <button type="button" class="btn menu" data-target="#carouselExampleIndicators" data-slide-to="1">Education</button>
+              <button type="button" class="btn menu" data-target="#carouselExampleIndicators" data-slide-to="2">Projects</button>
+              <button type="button" class="btn menu" data-target="#carouselExampleIndicators" data-slide-to="3">Languages</button>
+              
               <button type="button" class="btn menu">Contact</button>
           </div>
           </ul>
@@ -81,10 +85,10 @@
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
             </ol>
             <div class="carousel-inner">
               <div id='first' class="carousel-item active">
-                <img class="d-block w-100" src="..." alt="First slide">
               <!-- 
                follow the structure of 
                 work experience 
@@ -92,6 +96,7 @@
 
                -->
             <div class='work-exp' style="padding-bottom: 100px;">
+              <h2>Work Experience</h2>
               <div class='container'  style="width: 900px;">
               <div class="row" style="padding: 20px;">
                 <div class="col-md" style="text-align: left;">
@@ -149,17 +154,16 @@
                 <!-- Info -->
                 <div class="col-md" style="text-align: right; ">
                   <h5>Live Operations Team Member</h5>
-                  Working in a fast-paced start-up office environment having to constantly adapt and change to new processes within the office and business
-            <br>
-            Focus ensuring live orders successfully delivered to customers, liaising and coordinating with multiple parties (riders, restaurants, customers) 
-            <br>to overcome unique issues with deliveries
+                  Working in a fast-paced start-up office environment. <br>
+                  Constantly adapting to change and new processes within the office and business <br>
+                  Focus ensuring orders successfully delivered to customers, liaising and coordinating with multiple parties
+            <br>to overcome unique issues with operations
                 </div>
               </div>
             </div>
             </div>
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="..." alt="Second slide">
                           
             <div class="profile"  style="padding-bottom: 100px;">
               <!-- 
@@ -168,22 +172,71 @@
                 education
                 year range            breif into about what i enjoyed and what i did
                -->
-              <h3>About</h3>
-              <br>
-              Master of Information Technology at The University of Melbourne 
-              <br>
-              (Completion in November 2020)
-              <br>
-               Bachelor of Business (Information Systems) at RMIT University
-              <br> Completed from 2014-2017 with Distinction 
-              <br>
-              <br>Ivanhoe Grammar School 2008-2013
-
+              <h2>Education</h2>
+              <div class="container" style="width: 600px; padding: 15px;">
+                <div class="row">
+                  <div style="text-align: left;" class="col">
+                    <div>
+                      <h5>Master of Information Technology</h5>
+                    </div>
+                    <div>
+                      (Completion in November 2020)
+                    </div>
+                  </div>
+                  <div class="col" style="text-align: right;">
+                    <div>
+                      <h5>The University of Melbourne</h5>
+                    </div>
+                    <div>
+                      Currently completing my masters oooo oo aa a a
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container" style="width: 600px; padding: 15px;">
+                <div class="row">
+                  <div style="text-align: left;" class="col">
+                    <div>
+                      <h5>Bachelor of Business (Information Systems)</h5>
+                    </div>
+                    <div>
+                      Completed from 2014-2017
+                    </div>
+                  </div>
+                  <div class="col" style="text-align: right;">
+                    <div>
+                      <h5>RMIT University</h5>
+                    </div>
+                    <div>
+                    Completed With Distinction
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container" style="width: 600px; padding: 15px;">
+                <div class="row">
+                  <div style="text-align: left;" class="col">
+                    <div>
+                      <h5>Year 12 VCE</h5>
+                    </div>
+                    <div>
+                      Completed In 2013
+                    </div>
+                  </div>
+                  <div class="col" style="text-align: right;">
+                    <div>
+                      <h5>Ivanhoe Grammar School</h5>
+                    </div>
+                    <div>
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
           
             </div>
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="..." alt="Third slide">
                 <div class='uni-projects'  style="padding-bottom: 100px;">
                   <!-- 
                     follows the structure of
@@ -193,12 +246,79 @@
                                                   photo 
                                                   
                    -->
-                  <br>Uni Projects</br>
-                  <br>ToGather</br>
-                  <br>AI pacman</br>
-                  <br>Medical App</br>
+                   <h2>Uni Projects</h2>
+                   <div class="container" style="width: 500px; margin-top: 15px;">
+                     <div>
+                       <div style="text-align: left;">
+                        <h5>ToGather</h5>
+                       </div>
+                       <div class="row" style="text-align: right;"> 
+                         <div class="col">
+                          <img src="img/TogatherIcon.png" alt="togather" width="35%" class="float-left">
+                         </div>
+                         <div class="col">
+                         Social Networking App finds Local Events from Geo-location to help new people meet locally.
+                        </div>
+                       </div>
+                     </div>
+                   </div>
+
+                   <div class="container" style="width: 500px; margin-top: 15px;">
+                   <div>
+                      <div style="text-align: right;">
+                        <h5>AI pacman</h5>
+                      </div>
+                      <div class="row" style="text-align: left;"> 
+                        <div class="col">
+                         Applied AI techniques, such as A* search with Heurisitics to competitive play a team-based pac-man game.
+                       </div>
+                        <div class="col">
+                         <img src="img/ghost.gif" alt="ghost" width="35%"  class="float-right">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="container" style="width: 500px; margin-top: 15px;">
+                    <div>
+                      <div style="text-align: left;">
+                       <h5>WITCOM Web Reporting App</h5>
+                      </div>
+                      <div class="row" style="text-align: right;"> 
+                        <div class="col">
+                         <img src="img/witcomLogo.png" alt="witom" width="40%" class="float-left">
+                        </div>
+                        <div class="col">
+                         Developed from scratch a fully-functioning reporting and invoicing web application which handles thousands of call logs each day. 
+                       </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  
+                  <!-- <div class="container" style="width: 400px;">
+                    <div>
+                      <div style="text-align: right;">
+                       <h5>Medical App</h5>
+                      </div>
+                      <div class="row" style="text-align: left;"> 
+                        <div class="col">
+                          Some info about the project
+                       </div>
+                        <div class="col">
+                         <img src="img/TogatherIcon.png" alt="togather" width="35%" class="float-right">
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+                  <br> 
+                  <h5>Check out my Projects on my Github</h5>
+                <div class="calendar" style="background-color: #aeb2b4;">
+                  <!-- Loading stuff -->
+                  Loading the data just for you.
                 </div>
-    
+                         
+                </div>
               </div>
 
               
@@ -217,11 +337,7 @@
 
               <!-- Prepare a container for your calendar. -->
               Github Calender courtesy of <a href="https://github.com/IonicaBizau/github-calendar">IonicaBizau</a>
-              <div class="calendar">
-                <!-- Loading stuff -->
-                Loading the data just for you.
-              </div>
-                            
+
             </div>
           </div>
 
@@ -236,8 +352,9 @@
             </a>
           </div> 
 
-            <div class='Contact'>
+            <div class='Contact' style="background-color: #1c81c1">
               <br>Contact</br>
+              <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
             </div>
 </div>

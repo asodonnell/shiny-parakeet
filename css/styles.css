@@ -54,9 +54,10 @@ p{
 
 }
 
-.headingText{
+.headingText h1{
     color: white;
     text-align: center;
+    font-size: 50px;
 
 }
 
@@ -73,11 +74,15 @@ hr{
 
 }
 
+h2{
+    color: #1c81c1;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
 .headingProfile h1{
     color: #1c81c1;
     font-family: 'Alegreya Sans SC', sans-serif;
     font-size: 50px;
-    
 
 }
 
