@@ -43,6 +43,23 @@ p{
     transform: scale(0.96); 
 }
 
+.menuHovered{
+    background-color: #2d2d2d;
+    color: #1c81c1;
+    font-size: 19px;
+    transform: scale(0.96); 
+}
+
+.langTable{
+    transition: all .2s ease-in-out;
+    padding: 2px;
+    margin: 2px;
+}
+
+.langTable:hover{
+    transform: scale(1.15); 
+}
+
 
 .headingTitle{
     width: 100%;
@@ -122,6 +139,12 @@ h5{
     color: #27ddd8;
     font-family: 'Alegreya Sans SC', sans-serif;
     
+}
+
+.contactHead h1{
+    margin-top: 20px;
+    color: #153f70;  
+    font-family: 'Alegreya Sans SC', sans-serif;
 }
 
 body { 

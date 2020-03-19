@@ -20,14 +20,14 @@
             <b style="color: white;">Interactive Resume</b>
         </div> 
         <div class="rounded-top dropHeadingClicker">
-          <a href="#content">
+          <button class="" id='dropToContent'>
           <img class='lockOn' src="img/arrow.png" alt="pointer" style="width: 25%;">
-        </a>
+          </button>
         </div>
         </div>
     </div>
 
-    <div class="content">
+    <div class="content" id='content'>
       <a name="content"></a>
         <div>
           <div class='content-header'>
@@ -71,21 +71,20 @@
 <div style="background-color:  #153f70;">
           <ul class="nav justify-content-center">
             <div class="btn-group">
-              <button type="button" class="btn menu" data-target="#carouselExampleIndicators" data-slide-to="0">Work Exp</button>
-              <button type="button" class="btn menu" data-target="#carouselExampleIndicators" data-slide-to="1">Education</button>
-              <button type="button" class="btn menu" data-target="#carouselExampleIndicators" data-slide-to="2">Projects</button>
-              <button type="button" class="btn menu" data-target="#carouselExampleIndicators" data-slide-to="3">Languages</button>
-              
-              <button type="button" class="btn menu">Contact</button>
+              <button type="button" class="btn menu" id="0" data-target="#carouselContent" data-slide-to="0">Work Exp</button>
+              <button type="button" class="btn menu"  id="1" data-target="#carouselContent" data-slide-to="1">Education</button>
+              <button type="button" class="btn menu"  id="2" data-target="#carouselContent" data-slide-to="2">Projects</button>
+              <button type="button" class="btn menu"  id="3" data-target="#carouselContent" data-slide-to="3">Languages</button>
+              <button type="button" class="btn menu" id='btn-contact'>Contact</button>
           </div>
           </ul>
 
-          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <div id="carouselContent" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators" style="margin-top: 100px;">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+              <li data-target="#carouselContent" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselContent" data-slide-to="1"></li>
+              <li data-target="#carouselContent" data-slide-to="2"></li>
+              <li data-target="#carouselContent" data-slide-to="3"></li>
             </ol>
             <div class="carousel-inner">
               <div id='first' class="carousel-item active">
@@ -173,7 +172,7 @@
                 year range            breif into about what i enjoyed and what i did
                -->
               <h2>Education</h2>
-              <div class="container" style="width: 600px; padding: 15px;">
+              <div class="container" style="width: 800px; padding: 15px;">
                 <div class="row">
                   <div style="text-align: left;" class="col">
                     <div>
@@ -188,19 +187,20 @@
                       <h5>The University of Melbourne</h5>
                     </div>
                     <div>
-                      Currently completing my masters oooo oo aa a a
+                      Undergoing a computing specialization stream focusing on theoretical and applied computer science, covering a multitude of different CS fundamentals,
+                      as well as studies in business processes and the software development lifecycle.
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="container" style="width: 600px; padding: 15px;">
+              <div class="container" style="width: 800px; padding: 15px;">
                 <div class="row">
                   <div style="text-align: left;" class="col">
                     <div>
                       <h5>Bachelor of Business (Information Systems)</h5>
                     </div>
                     <div>
-                      Completed from 2014-2017
+                      Completed from 2014-2017 (With Distinction)
                     </div>
                   </div>
                   <div class="col" style="text-align: right;">
@@ -208,12 +208,13 @@
                       <h5>RMIT University</h5>
                     </div>
                     <div>
-                    Completed With Distinction
+                    By completing a combination of studies in business and major studies in information systems,
+                    this has provided an understanding in business IT analysis, design and development, and programming and software
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="container" style="width: 600px; padding: 15px;">
+              <div class="container" style="width: 800px; padding: 15px;">
                 <div class="row">
                   <div style="text-align: left;" class="col">
                     <div>
@@ -247,7 +248,7 @@
                                                   
                    -->
                    <h2>Uni Projects</h2>
-                   <div class="container" style="width: 500px; margin-top: 15px;">
+                   <div class="container" style="width: 700px; margin-top: 15px;">
                      <div>
                        <div style="text-align: left;">
                         <h5>ToGather</h5>
@@ -263,7 +264,7 @@
                      </div>
                    </div>
 
-                   <div class="container" style="width: 500px; margin-top: 15px;">
+                   <div class="container" style="width: 700px; margin-top: 15px;">
                    <div>
                       <div style="text-align: right;">
                         <h5>AI pacman</h5>
@@ -279,7 +280,7 @@
                     </div>
                   </div>
 
-                  <div class="container" style="width: 500px; margin-top: 15px;">
+                  <div class="container" style="width: 700px; margin-top: 15px;">
                     <div>
                       <div style="text-align: left;">
                        <h5>WITCOM Web Reporting App</h5>
@@ -294,29 +295,12 @@
                       </div>
                     </div>
                   </div>
-
-                  
-                  <!-- <div class="container" style="width: 400px;">
-                    <div>
-                      <div style="text-align: right;">
-                       <h5>Medical App</h5>
-                      </div>
-                      <div class="row" style="text-align: left;"> 
-                        <div class="col">
-                          Some info about the project
-                       </div>
-                        <div class="col">
-                         <img src="img/TogatherIcon.png" alt="togather" width="35%" class="float-right">
-                        </div>
-                      </div>
-                    </div>
-                  </div> -->
                   <br> 
-                  <h5>Check out my Projects on my Github</h5>
-                <div class="calendar" style="background-color: #aeb2b4;">
+                   <div class="calendar" style="background-color: #aeb2b4;">
                   <!-- Loading stuff -->
                   Loading the data just for you.
                 </div>
+                Github Calender courtesy of <a href="https://github.com/IonicaBizau/github-calendar">IonicaBizau</a>
                          
                 </div>
               </div>
@@ -324,57 +308,173 @@
               
 
               <div class="carousel-item">
-            <div class='programming'>
-              <!-- 
-                follows the structure of
-
-                large list of languages
-                on hover: show star ranking 
-
-                see if you can add github link/embedded contribution thing
-               -->
-              <br>Programming Languages</br>
-
-              <!-- Prepare a container for your calendar. -->
-              Github Calender courtesy of <a href="https://github.com/IonicaBizau/github-calendar">IonicaBizau</a>
-
+            <div class='programming' style="padding-bottom: 100px;">
+              <div class="container" style="width:600px; padding-bottom: 200px;">
+                <h2>Programming Languages</h2>
+                <h5>Skills</h5>
+                <div class="row">
+                  <div class="col">
+                    <table>
+                      <tr class="langTable">
+                        <td style=" text-align: left;">Java</td>
+                        <td style=" text-align: right; width: 150px;">⭐ ⭐ ⭐ ⭐ ⭐</td>
+                      </tr>
+                      <tr  class="langTable">
+                        <td style=" text-align: left;">Python</td>
+                        <td style=" text-align: right;">⭐ ⭐ ⭐ ⭐</td>
+                      </tr>
+                      <tr  class="langTable">
+                        <td style=" text-align: left";>PHP</td>
+                        <td style=" text-align: right;">⭐ ⭐ ⭐ ⭐ </td>
+                      </tr>
+                      <tr  class="langTable">
+                        <td style=" text-align: left";>CSS</td>
+                        <td style=" text-align: right;">⭐ ⭐ ⭐ ⭐</td>
+                      </tr>
+                      <tr  class="langTable">
+                        <td style=" text-align: left";>HTML</td>
+                        <td style=" text-align: right;">⭐ ⭐ ⭐ ⭐</td>
+                      </tr>
+                      <tr  class="langTable">
+                        <td style=" text-align: left";>JavaScript/Jquery</td>
+                        <td style=" text-align: right;">⭐ ⭐ ⭐ ⭐</td>
+                      </tr>
+                    </table>    
+                    
+                  </div>
+                  <div class="col">
+                    <table>
+                      <tr  class="langTable">
+                        <td style=" text-align: left";>SQL</td>
+                        <td style=" text-align: right; width: 150px;">⭐ ⭐ ⭐ ⭐</td>
+                      </tr>
+                      <tr  class="langTable">
+                        <td style=" text-align: left";>Bootstrap 4</td>
+                        <td style=" text-align: right;">⭐ ⭐ ⭐ ⭐ </td>
+                      </tr>
+                      <tr  class="langTable">
+                        <td style=" text-align: left";>Git</td>
+                        <td style=" text-align: right;">⭐ ⭐ ⭐</td>
+                      </tr>
+                      <tr  class="langTable">
+                        <td style=" text-align: left";>Node.js/Express.js</td>
+                        <td style=" text-align: right;">⭐ ⭐</td>
+                      </tr>
+                      <tr  class="langTable">
+                        <td style=" text-align: left";>UNIX</td>
+                        <td style=" text-align: right;">⭐ ⭐</td>
+                      </tr>
+                      <tr  class="langTable">
+                        <td style=" text-align: left";>Haskell</td>
+                        <td style=" text-align: right;">⭐</td>
+                      </tr>
+                    </table>  
+                  </div>
+                </div>
+                
+          
+              </div>
             </div>
           </div>
 
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
           </div> 
 
-            <div class='Contact' style="background-color: #1c81c1">
-              <br>Contact</br>
-              <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class='Contact' id='contact' style="background-color: #1d95df">
+              <br>
+            
+              <div class='contactHead'>
+                <h1>Contact</h1>
+              </div>
+              <div class="container" style="width: 900px; height: 500px; text-align: center;">
+                <hr>
+                <button class="btn btn-outline-light"  id="email"  style="margin: 10px 0"><img src="img/at.png" alt="at"style="margin-right: 15px;">alexodonnell159@gmail.com</button><br>
+                <button class="btn btn-outline-light"  id="linkedin"  style="margin: 10px 5px"><img src="img/linkedin.png" alt="linked" style="margin-right: 15px;">/in/alexander-o-donnell-09b3961a5/</button> 
+                <hr>
+                <div class='container' style="width: 350px;">
+                  "Thanks for Visiting!" - Ava
+                  <img class="meimg" src="img/ava.jpg" alt="ava">
+                </div>
+               
+              </div>
+              <div>
+                <small>
+                  Original Website Design Based On Pascal van Gemert Personal Website: <a href="http://www.pascalvangemert.nl/">http://www.pascalvangemert.nl/</a>
+                  <br>
+                  Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> and Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+                </small>
 
+              </div>
             </div>
 </div>
         </div>
     </div>
 
 
-    <script
+<script
   src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"
 >
 </script>
-
 <link
   rel="stylesheet"
   href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"
 />
-
-
-<script></script>
 <script type="text/javascript">
+
+$(document).ready(function() {
+  
+  $('#email').click(function(){
+    window.location.href = "mailto:alexodonnell159@gmail.com";
+  });
+
+  $('#btn-contact').click(function(){
+    var element = document.getElementById("contact");
+
+    element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+  });
+
+  $('#dropToContent').click(function(){
+    var content = document.getElementById("content");
+    content.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  });
+
+  $('#linkedin').click(function(){
+    window.location.href = "https://www.linkedin.com/in/alexander-o-donnell-09b3961a5/";
+  });
+
+  $('#carouselContent').on('slid.bs.carousel', function () {
+    var currentIndex = $('div.active').index();
+
+    console.log($('#'+currentIndex).addClass('menuHovered'));
+
+});
+
+$('#carouselContent').on('slide.bs.carousel', function () {
+
+    var currentIndex = $('div.active').index();
+    console.log($('#'+currentIndex).removeClass('menuHovered'));
+
+    });
+
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop();
+
+    if(windowBottom > 0){
+      $('.dropHeadingClicker').hide();
+    } else if(windowBottom === 0){
+      $('.dropHeadingClicker').show();m
+    }
+    
+  }).scroll(); //invoke scroll-handler on page-load
+});
 
     new GitHubCalendar(".calendar", "asodonnell");
 </script>
