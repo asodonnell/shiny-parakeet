@@ -2,7 +2,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Alexander O'Donnell Interactive CV</title>
+    <meta name="description" content="Alexander O'Donnell's basic interactive CV">
+    <meta name="keywords" content="CV, Resume, Jobs, Work">
+    <meta name="author" content="Alexander O'Donnell">
     <script
   src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -38,8 +41,8 @@
                 <hr>
               </div>  
             </div>
-            <div class='row justify-content-md-center' style="margin-top: 50px;">
-              <div class='col-md-auto' style="width: 250px; text-align: left;">
+            <div class='row justify-content-md-center'style="margin-top: 50px;">
+              <div class='col-md-auto animate-opacity'  id='left-side' style="width: 250px; text-align: left;">
                 <h4>About Me:
                 </h4>
                 <br>
@@ -49,10 +52,10 @@
                   (when I'm not playing League).
                 </p>
               </div>
-              <div class='col-md-auto' style="width: 350px;">
+              <div class='col-md-auto animate-opacity' id="center-side"  style="width: 350px;">
                 <img class="meimg" src="img/me.jpg" alt="me">
               </div>
-              <div class='col-md-auto' style="width: 250px; text-align: right;">
+              <div class='col-md-auto animate-opacity' id="right-side" style="width: 250px; text-align: right;">
               <h4>Life Stats:</h4>
               <p>
                 <br>
@@ -63,7 +66,7 @@
                 <h5>Location:</h5>
                 Melbourne, Victoria, Australia <br>
                 <h5>Dog:</h5>
-                Ava (Gordan Setter)
+                Ava! (Gordan Setter)
               </p>
               </div>
             </div>
@@ -429,54 +432,68 @@
 />
 <script type="text/javascript">
 
-$(document).ready(function() {
+  $(document).ready(function() {
   
-  $('#email').click(function(){
-    window.location.href = "mailto:alexodonnell159@gmail.com";
-  });
-
-  $('#btn-contact').click(function(){
-    var element = document.getElementById("contact");
-
-    element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
-  });
-
-  $('#dropToContent').click(function(){
-    var content = document.getElementById("content");
-    content.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-  });
-
-  $('#linkedin').click(function(){
-    window.location.href = "https://www.linkedin.com/in/alexander-o-donnell-09b3961a5/";
-  });
-
-  $('#carouselContent').on('slid.bs.carousel', function () {
-    var currentIndex = $('div.active').index();
-
-    console.log($('#'+currentIndex).addClass('menuHovered'));
-
-});
-
-$('#carouselContent').on('slide.bs.carousel', function () {
-
-    var currentIndex = $('div.active').index();
-    console.log($('#'+currentIndex).removeClass('menuHovered'));
-
+  
+    $('#email').click(function(){
+      window.location.href = "mailto:alexodonnell159@gmail.com";
     });
+  
+    $('#btn-contact').click(function(){
+      var element = document.getElementById("contact");
+  
+      element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+    });
+  
+    $('#dropToContent').click(function(){
+      var content = document.getElementById("content");
+      content.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    });
+  
+    $('#linkedin').click(function(){
+      window.location.href = "https://www.linkedin.com/in/alexander-o-donnell-09b3961a5/";
+    });
+  
+    $('#carouselContent').on('slid.bs.carousel', function () {
+      var currentIndex = $('div.active').index();
+  
+      $('#'+currentIndex).addClass('menuHovered');
+  
+  });
+  
+  $('#carouselContent').on('slide.bs.carousel', function () {
+  
+      var currentIndex = $('div.active').index();
+     $('#'+currentIndex).removeClass('menuHovered');
+  
+      });
+  
+    $(window).scroll(function() {
+      var windowTop = $(this).scrollTop();
+  
+      var photo = ($('#center-side').position().top);
+      var windowBottom = $(this).scrollTop() + $(this).innerHeight();
 
-  $(window).scroll(function() {
-    var windowBottom = $(this).scrollTop();
+      if(windowTop > 0){
+        $('.dropHeadingClicker').hide();
+      } else if(windowTop === 0){
+        $('.dropHeadingClicker').show();
+      }
 
-    if(windowBottom > 0){
-      $('.dropHeadingClicker').hide();
-    } else if(windowBottom === 0){
-      $('.dropHeadingClicker').show();m
-    }
-    
-  }).scroll(); //invoke scroll-handler on page-load
-});
-
-    new GitHubCalendar(".calendar", "asodonnell");
-</script>
+      //messy but adding fade in animation to Profile section of website
+      if((windowBottom) > photo){
+        $('#left-side').addClass('left-side');
+        $('#left-side').removeClass('animate-opacity');
+        $('#right-side').addClass('right-side');
+        $('#right-side').removeClass('animate-opacity');
+        $('#center-side').addClass('center-side');
+        $('#center-side').removeClass('animate-opacity');
+      }
+      
+    }).scroll(); //invoke scroll-handler on page-load
+  });
+  
+      new GitHubCalendar(".calendar", "asodonnell");
+  </script>
   </body>
 </html>

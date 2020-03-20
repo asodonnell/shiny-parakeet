@@ -18,6 +18,62 @@ p{
     justify-content: center;
 }
 
+
+.animate-opacity{
+    opacity: 0;
+}
+
+.center-side{
+    position:relative;
+    width: 350px;
+    animation:animatetop 0.7s;
+}
+
+@keyframes animatetop{
+    from{
+        top:-300px;
+        opacity:0;  
+    } to {
+    top:0;
+    opacity:1;
+    }
+}
+
+.left-side{
+    position:relative;
+    width: 250px;
+    text-align: left;
+    animation:animateleft 0.7s
+}
+
+@keyframes animateleft {
+    from
+    {
+        left:-300px;
+        opacity:0;
+    } to{
+        left:0;
+        opacity:1;
+    }
+}
+
+.right-side{
+    position:relative;
+    width: 250px; 
+    text-align: right;
+    animation:animateright 0.7s
+}
+
+@keyframes animateright{
+    from{
+        right:-300px;
+        opacity:0;
+    } to {
+        right:0;
+        opacity:1
+    }
+ }
+
 .headingProfile{
     font-size: 50px;
     padding: 30px;
